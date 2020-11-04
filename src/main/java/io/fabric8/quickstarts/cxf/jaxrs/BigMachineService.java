@@ -19,7 +19,7 @@ public interface BigMachineService {
     
     @POST
     @Path("/testRequest")
-    @Produces(MediaType.APPLICATION_XML)
+    @Produces({MediaType.APPLICATION_XML,MediaType.TEXT_XML})
     String testRequest(String contenido);
     
     @GET
