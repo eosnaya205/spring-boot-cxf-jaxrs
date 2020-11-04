@@ -21,5 +21,10 @@ public interface BigMachineService {
     @Path("/testRequest")
     @Produces(MediaType.APPLICATION_XML)
     String testRequest(String contenido);
+    
+    @GET
+    @Path("/testRequest")
+    @Produces(MediaType.APPLICATION_XML)
+    String testRequestGet();
 
 }

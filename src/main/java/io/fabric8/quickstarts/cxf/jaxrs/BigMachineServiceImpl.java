@@ -15,6 +15,12 @@ public class BigMachineServiceImpl implements BigMachineService  {
 		System.out.println(contenido);
 		return contenido;
 	}
+
+
+	@Override
+	public String testRequestGet() {
+		 return "Ok";
+	}
 	
 	
 
