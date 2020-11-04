@@ -41,7 +41,7 @@ public class SampleRestApplication {
         // setup CXF-RS
         JAXRSServerFactoryBean endpoint = new JAXRSServerFactoryBean();
         endpoint.setBus(bus);
-        endpoint.setServiceBeans(Arrays.<Object>asList(new BigMachineImpl()));
+        endpoint.setServiceBeans(Arrays.<Object>asList(new BigMachineServiceImpl()));
         endpoint.setAddress("/");
         endpoint.setFeatures(Arrays.asList(new Swagger2Feature()));
         return endpoint.create();
