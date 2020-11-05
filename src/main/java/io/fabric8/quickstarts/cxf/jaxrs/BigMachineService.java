@@ -5,6 +5,7 @@ import javax.ws.rs.POST;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
+import javax.ws.rs.core.Response;
 
 import org.springframework.stereotype.Service;
 
@@ -20,7 +21,7 @@ public interface BigMachineService {
     @POST
     @Path("/testRequest")
     @Produces({MediaType.APPLICATION_XML,MediaType.TEXT_XML})
-    String testRequest(String contenido);
+    BigMachineServiceResponse testRequest(String contenido);
     
     @GET
     @Path("/testRequest")
