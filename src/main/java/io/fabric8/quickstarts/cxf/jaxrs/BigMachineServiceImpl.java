@@ -33,6 +33,26 @@ public class BigMachineServiceImpl implements BigMachineService  {
 	public String testRequestGet() {
 		 return "Ok";
 	}
+
+
+	public OrderServicePortTypeGetOrderOutput testRequest2(OrderServicePortTypeGetOrderInput contenido) {
+		
+		System.out.println("-----contenido del request:");
+		System.out.println(contenido);
+		
+		OrderServicePortTypeGetOrderOutput response = new OrderServicePortTypeGetOrderOutput();
+		response.setOrder(contenido.getOrder());
+		
+		return response;
+	}
+
+
+
+	public String testRequest3(String contenido) {
+		System.out.println("-----contenido del request:");
+		System.out.println(contenido);
+		return "success";
+	}
 	
 	
 
