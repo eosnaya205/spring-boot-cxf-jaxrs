@@ -17,7 +17,7 @@ public class BigMachineServiceImpl implements BigMachineService  {
 		System.out.println(contenido);
 		
 		BigMachineServiceResponse response = new BigMachineServiceResponse();
-		response.setSuccess("success");			
+		response.setSuccess("success 123");			
 		response.setMessage("Finished processing transaction #612939415");
 		//response.setErrorMessages("Purchase order number in document number: 102478492 exists within 365 days.Sales document  was not changed");
 		response.setReturnCode("0");
