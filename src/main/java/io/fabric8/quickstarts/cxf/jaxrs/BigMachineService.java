@@ -29,12 +29,12 @@ public interface BigMachineService {
     @Produces(MediaType.APPLICATION_XML)
     String testRequestGet();
     
-    @POST
-    @Path("/testRequest2")
-    @Consumes({MediaType.APPLICATION_XML,MediaType.TEXT_XML})
-    @Produces({MediaType.APPLICATION_XML,MediaType.TEXT_XML})
-    OrderServicePortTypeGetOrderOutput testRequest2(OrderServicePortTypeGetOrderInput contenido);
-    
+//    @POST
+//    @Path("/testRequest2")
+//    @Consumes({MediaType.APPLICATION_XML,MediaType.TEXT_XML})
+//    @Produces({MediaType.APPLICATION_XML,MediaType.TEXT_XML})
+//    OrderServicePortTypeGetOrderOutput testRequest2(OrderServicePortTypeGetOrderInput contenido);
+//    
     @POST
     @Path("/testRequest3")
     @Produces({MediaType.APPLICATION_XML,MediaType.TEXT_XML})
