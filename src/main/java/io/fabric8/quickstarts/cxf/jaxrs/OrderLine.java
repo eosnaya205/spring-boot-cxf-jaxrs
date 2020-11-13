@@ -8,40 +8,7 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 
 
-/**
- * <p>Clase Java para OrderLine complex type.
- * 
- * <p>El siguiente fragmento de esquema especifica el contenido que se espera que haya en esta clase.
- * 
- * <pre>
- * &lt;complexType name="OrderLine"&gt;
- *   &lt;complexContent&gt;
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
- *       &lt;sequence&gt;
- *         &lt;element name="ItemNumber" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0" form="qualified"/&gt;
- *         &lt;element name="MaterialNumber" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0" form="qualified"/&gt;
- *         &lt;element name="OrderQuantity" type="{http://www.w3.org/2001/XMLSchema}double" minOccurs="0" form="qualified"/&gt;
- *         &lt;element name="PA_PE_SalesDeal" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0" form="qualified"/&gt;
- *         &lt;element name="ExpectedPrice" type="{http://www.w3.org/2001/XMLSchema}double" minOccurs="0" form="qualified"/&gt;
- *         &lt;element name="ExpectedCurrency" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0" form="qualified"/&gt;
- *         &lt;element name="ExpectedUnit" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0" form="qualified"/&gt;
- *         &lt;element name="SalesUnit" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0" form="qualified"/&gt;
- *         &lt;element name="Currency" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0" form="qualified"/&gt;
- *         &lt;element name="Price" type="{http://www.w3.org/2001/XMLSchema}double" minOccurs="0" form="qualified"/&gt;
- *         &lt;element name="Discount" type="{http://www.w3.org/2001/XMLSchema}double" minOccurs="0" form="qualified"/&gt;
- *         &lt;element name="NetPrice" type="{http://www.w3.org/2001/XMLSchema}double" minOccurs="0" form="qualified"/&gt;
- *         &lt;element name="ReturnMessage" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0" form="qualified"/&gt;
- *         &lt;element name="Plant" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0" form="qualified"/&gt;
- *         &lt;element ref="{urn:soap.jameshardie.com}BalanceItem" minOccurs="0"/&gt;
- *         &lt;element ref="{urn:soap.jameshardie.com}Margin" minOccurs="0"/&gt;
- *       &lt;/sequence&gt;
- *     &lt;/restriction&gt;
- *   &lt;/complexContent&gt;
- * &lt;/complexType&gt;
- * </pre>
- * 
- * 
- */
+
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "OrderLine", propOrder = {
     "itemNumber",

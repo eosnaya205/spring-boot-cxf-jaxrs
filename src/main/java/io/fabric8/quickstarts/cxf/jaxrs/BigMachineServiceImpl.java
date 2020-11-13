@@ -1,6 +1,5 @@
 package io.fabric8.quickstarts.cxf.jaxrs;
 
-import javax.ws.rs.core.Response;
 
 import io.swagger.annotations.Api;
 
@@ -29,7 +28,6 @@ public class BigMachineServiceImpl implements BigMachineService  {
 	}
 
 
-	@Override
 	public String testRequestGet() {
 		 return "Ok";
 	}

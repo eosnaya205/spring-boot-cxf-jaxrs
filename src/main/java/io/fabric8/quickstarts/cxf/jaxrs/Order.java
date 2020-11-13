@@ -8,51 +8,6 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 
 
-/**
- * <p>Clase Java para Order complex type.
- * 
- * <p>El siguiente fragmento de esquema especifica el contenido que se espera que haya en esta clase.
- * 
- * <pre>
- * &lt;complexType name="Order"&gt;
- *   &lt;complexContent&gt;
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
- *       &lt;sequence&gt;
- *         &lt;element ref="{urn:soap.jameshardie.com}OrderType" minOccurs="0"/&gt;
- *         &lt;element ref="{urn:soap.jameshardie.com}SoldToParty" minOccurs="0"/&gt;
- *         &lt;element ref="{urn:soap.jameshardie.com}CustomerPO" minOccurs="0"/&gt;
- *         &lt;element ref="{urn:soap.jameshardie.com}ContractNumber" minOccurs="0"/&gt;
- *         &lt;element ref="{urn:soap.jameshardie.com}ProgramID" minOccurs="0"/&gt;
- *         &lt;element name="TransactionId" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
- *         &lt;element name="RequestedDeliveryDate" type="{urn:soap.jameshardie.com}date" minOccurs="0"/&gt;
- *         &lt;element name="RunMode" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
- *         &lt;element name="ReturnCode" type="{http://www.w3.org/2001/XMLSchema}integer" minOccurs="0"/&gt;
- *         &lt;element name="ReturnMessage" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
- *         &lt;element name="SalesOrganization" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
- *         &lt;element name="DistributionChannel" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
- *         &lt;element name="Division" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
- *         &lt;element name="POMethod" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
- *         &lt;element name="DeliveryPO" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
- *         &lt;element name="ShippingType" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
- *         &lt;element name="IncoTerms" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
- *         &lt;element name="Contact" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
- *         &lt;element name="SCPNumber" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
- *         &lt;element name="ShippingCharges" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
- *         &lt;element name="Pooling" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
- *         &lt;element name="CustomerNotes" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
- *         &lt;element name="ediEdited" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
- *         &lt;element name="pricingPartnerShippingID" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
- *         &lt;element name="DoNotShipBeforeDate" type="{urn:soap.jameshardie.com}date" minOccurs="0"/&gt;
- *         &lt;element name="ShippingInstruction" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
- *         &lt;element ref="{urn:soap.jameshardie.com}OrderLines"/&gt;
- *       &lt;/sequence&gt;
- *     &lt;/restriction&gt;
- *   &lt;/complexContent&gt;
- * &lt;/complexType&gt;
- * </pre>
- * 
- * 
- */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "Order", propOrder = {
     "orderType",
@@ -85,15 +40,15 @@ import javax.xml.bind.annotation.XmlType;
 })
 public class Order {
 
-    @XmlElement(name = "OrderType", namespace = "urn:soap.jameshardie.com")
+    @XmlElement(name = "OrderType")
     protected String orderType;
-    @XmlElement(name = "SoldToParty", namespace = "urn:soap.jameshardie.com")
+    @XmlElement(name = "SoldToParty")
     protected String soldToParty;
-    @XmlElement(name = "CustomerPO", namespace = "urn:soap.jameshardie.com")
+    @XmlElement(name = "CustomerPO")
     protected String customerPO;
-    @XmlElement(name = "ContractNumber", namespace = "urn:soap.jameshardie.com")
+    @XmlElement(name = "ContractNumber")
     protected String contractNumber;
-    @XmlElement(name = "ProgramID", namespace = "urn:soap.jameshardie.com")
+    @XmlElement(name = "ProgramID")
     protected String programID;
     @XmlElement(name = "TransactionId")
     protected String transactionId;
